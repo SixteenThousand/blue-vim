@@ -6,12 +6,23 @@ set number
 set rnu
 set scrolloff=2
 set showtabline=0
+set listchars=tab:>\ ,space:-,multispace:---+
 let g:netrw_banner=0
 autocmd BufEnter * {
+    set tabstop=4
+    set shiftwidth=4
+    set expandtab
+    set cindent
+}
+
+autocmd FileType sh,bash {
+    set noexpandtab
+}
+
+autocmd FileType javascript,typescriptreact {
     set tabstop=2
     set shiftwidth=2
     set expandtab
-    set cindent
 }
 
 " status line
