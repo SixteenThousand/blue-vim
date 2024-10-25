@@ -14,12 +14,10 @@ autocmd BufEnter * {
     set expandtab
     set cindent
 }
-
 autocmd FileType sh,bash {
     set noexpandtab
 }
-
-autocmd FileType javascript,typescriptreact {
+autocmd FileType javascript,typescript,typescriptreact,css,html {
     set tabstop=2
     set shiftwidth=2
     set expandtab
